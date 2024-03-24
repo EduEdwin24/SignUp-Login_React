@@ -1,0 +1,75 @@
+.card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    align-items:center;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #9ead5d, -20px -20px 60px #cae951;;
+  }
+  
+  .bg {
+    position: absolute;
+    
+    align-items: center;
+    width: 240px;
+    height: 200px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    background-color: #ff0000;
+    opacity: 1;
+            filter: blur(12px);
+            animation: blob-bounce 5s infinite ease;
+  }
+  .text {
+    align-items: center;
+    text-decoration-color: rgb(17, 87, 217);
+    font: bold 20px arial,;
+  }
+  
+  /*  */
+  
+  @keyframes blob-bounce {
+    0% {
+              transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+    25% {
+      
+              transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+    50% {
+
+              transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+    75% {
+      
+              transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+    100% {
+      
+              transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+
+
+
+  

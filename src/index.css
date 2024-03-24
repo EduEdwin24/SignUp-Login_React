@@ -1,0 +1,10 @@
+body {
+    background-color: #fee440;
+}
+#sv1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 200vh;
+}
